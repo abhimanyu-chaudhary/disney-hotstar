@@ -8,6 +8,7 @@ import { PiTelevisionSimpleBold } from "react-icons/pi";
 import { BiMovie } from "react-icons/bi";
 import { IoTennisballOutline } from "react-icons/io5";
 import { TbCategory } from "react-icons/tb";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 function Routing() {
   const data = [
@@ -20,12 +21,17 @@ function Routing() {
     { icon: <TbCategory />, name: "Categories", link: "/categories" },
   ];
   return (
-    <div>
+    <div className="w-28 h-screen bg-orange-100">
+    <img src="https://img.hotstar.com/image/upload/v1656431456/web-images/logo-d-plus.svg" alt="" />
+    <button className="flex items-center m-0 p-0">
+       <span> Subscribe </span> 
+        <MdKeyboardArrowRight /> 
+    </button>
       {data.map((elem, index) => {
         return (
           <div className="flex items-center gap-2">
-            {elem.icon}
-            <Link to={elem.link} key={index}>
+            <span className="text-xl">{elem.icon}</span>
+            <Link className="hover:block " to={elem.link} key={index}>
               <h1>{elem.name}</h1>
             </Link>
           </div>
