@@ -21,20 +21,22 @@ function Routing() {
     { icon: <TbCategory />, name: "Categories", link: "/categories" },
   ];
   return (
-    <div className="w-28 h-screen bg-orange-100">
-    <img src="https://img.hotstar.com/image/upload/v1656431456/web-images/logo-d-plus.svg" alt="" />
-    <button className="flex items-center m-0 p-0">
-       <span> Subscribe </span> 
-        <MdKeyboardArrowRight /> 
+    <div className="w-28 h-screen pt-8 pl-0 flex flex-col items-center bg-slate-600">
+    <img className="w-14" src="https://img.hotstar.com/image/upload/v1656431456/web-images/logo-d-plus.svg" alt="" />
+    <button className="flex items-center px-1 py-[1px]  bg-[#ffcc754a] text-[#ffe490] rounded-full mt-5 text-sm justify-center">
+       <span className=""> Subscribe </span> 
+        <MdKeyboardArrowRight className="mt-[2px]" /> 
     </button>
       {data.map((elem, index) => {
         return (
-          <div className="flex items-center gap-2">
-            <span className="text-xl">{elem.icon}</span>
-            <Link className="hover:block " to={elem.link} key={index}>
-              <h1>{elem.name}</h1>
+            <Link className="" to={elem.link} key={index}>
+                <div className="flex items-center gap-2 mt-9 relative cursor-pointer">
+                    <span className="text-xl text-white ">{elem.icon}</span>
+                    <h1 className="text-white absolute top-[-1px] left-8 w-40">
+                        {elem.name}
+                    </h1>
+                </div>
             </Link>
-          </div>
         );
       })}
     </div>

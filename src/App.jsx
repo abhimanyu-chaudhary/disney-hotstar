@@ -6,9 +6,9 @@ function App() {
   
 
   return (
-    <>
+    <div className='bg-slate-800'>
      <Routing />
-    </>
+    </div>
   )
 }
 
