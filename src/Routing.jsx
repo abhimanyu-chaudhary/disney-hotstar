@@ -33,7 +33,8 @@ function Routing() {
   return (
     <div className="flex">
         {/* bg-gradient-to-l from-zinc-50 to-transparent */}
-        <div className=" w-[15vw] bg-zinc-800 z-10">
+        <div className="bg-gradient-to-l from-transparent to-slate-900 absolute w-[100vw] h-[100vh] "></div>
+        <div className=" w-[15vw] z-10">
             <div className="w-28 h-screen pt-8 pl-0 flex flex-col items-center bg-transparent">
                 <img
                     className="w-14"
@@ -62,8 +63,8 @@ function Routing() {
                 </div>
             </div>
         </div>
-        <div className="w-full mx-auto bg-zinc-800 text-white">
-            <Routes className="w-full">
+        <div className="w-full mx-auto text-white">
+            <Routes className="">
                 <Route path="/mypage" element={<MyPage />} />
                 <Route path="/explore" element={<Explore />} />
                 <Route path="/" element={<HomePage />} />
