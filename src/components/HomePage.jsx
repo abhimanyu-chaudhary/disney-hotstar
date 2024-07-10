@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <div>
       <div className='mt-14 text-slate-300'>
-        <video muted autoPlay className='w-96 h-96' src="https://www.youtube.com/watch?v=97ozjepH31Y"></video>
+        
         <div className='flex flex-col gap-3'>
           <img className='w-40' src={movieData[0].movie} alt="" />
           <h1>{movieData[0].newRelease && "NewRelease"}</h1>
