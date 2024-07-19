@@ -184,7 +184,7 @@ function HomePage() {
             </div>
             <div className="w-[20vw]">
               <ThumbnailList
-                className="bg-red-500 overflow-hidden"
+                className="overflow-hidden"
                 thumbnail={movieData}
                 onThumbnailClick={handleThumbnailClick}
               />
