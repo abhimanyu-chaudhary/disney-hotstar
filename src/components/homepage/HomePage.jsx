@@ -182,11 +182,12 @@ function HomePage() {
               <Subscribe />
               <Add />
             </div>
-            <div className="w-[20vw]">
+            <div className="w-[35vw] h-full">
               <ThumbnailList
-                className="overflow-hidden"
+                className=""
                 thumbnail={movieData}
                 onThumbnailClick={handleThumbnailClick}
+                activeThumbnail={selectedMovie}
               />
             </div>
             
