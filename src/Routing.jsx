@@ -12,7 +12,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 import MyPage from "./components/MyPage";
 import Explore from "./components/Explore";
-import HomePage from "./components/HomePage";
+import HomePage from "./components/homepage/HomePage";
 import Tv from "./components/Tv";
 import Movies from "./components/Movies";
 import Sports from "./components/Sports";
