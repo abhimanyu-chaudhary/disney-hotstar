@@ -13,8 +13,8 @@ function HomePage() {
         "https://img10.hotstar.com/image/upload/f_auto,h_148/sources/r1/cms/prod/6612/1721328506612-t",
       newRelease: true,
       year: 2023,
-      season: 1,
-      language: 7,
+      season: "1 Season",
+      language: "7 Languages",
       rating: "U/A 16+",
       subscribe: true,
       add: true,
@@ -28,8 +28,8 @@ function HomePage() {
       title: "https://img10.hotstar.com/image/upload/f_auto,h_148/sources/r1/cms/prod/410/1711028050410-t",
       newRelease: true,
       year: 2016,
-      season: 1,
-      language: 7,
+      season: "1 Season",
+      language: "3 Languages",
       rating: "U/A 16+",
       description:
         "NEW EPISODES EVERY FRIDAY. RK Multispeciality Hospital is a beacon of hope and healing. Its doctors are resilient even when they have to deal with medic...",
@@ -164,25 +164,29 @@ function HomePage() {
           loop
         ></video>
 
-        <div className="flex flex-col gap-4 h-[80%]">
-          <img className="w-44" src={selectedMovie.title} alt="movie-logo" />
-          <h1>{selectedMovie.newRelease && "NewRelease"}</h1>
-          <div className="flex gap-2 font-semibold">
-            <h1>{selectedMovie.year}</h1>
-            <h1>{selectedMovie.season} Seasons</h1>
-            <h1>{selectedMovie.language} Languages</h1>
-            <h1>{selectedMovie.rating}</h1>
+        <div className="flex items-end gap-32">
+          <div className="flex flex-col gap-4 min-h-[80%]">
+              <div className="h-32">
+                <img className="w-48" src={selectedMovie.title} alt="movie-logo" />
+              </div>
+              <h1 className="font-bold text-green-400 min-h-10">{selectedMovie.newRelease ? "NewRelease" : "Trending Now"}</h1>
+              <div className="flex gap-2 font-semibold">
+                <h1>{selectedMovie.year}</h1>
+                <h1>{selectedMovie.season}</h1>
+                <h1>{selectedMovie.language}</h1>
+                <h1>{selectedMovie.rating}</h1>
+              </div>
+              <h5 className="w-[30rem] h-[5rem] text-slate-300">
+                {selectedMovie.description}
+              </h5>
+              <h1 className="font-semibold">{selectedMovie.genre}</h1>
+              <div className="flex gap-5 mt-2">
+                <Subscribe />
+                <Add />
+              </div>
           </div>
-          <h5 className="w-[30rem] text-slate-300">
-            {selectedMovie.description}
-          </h5>
-          <h1 className="font-semibold">{selectedMovie.genre}</h1>
-          <div className="flex gap-[15rem] w-[100vw]">
-            <div className="flex gap-5 mt-2">
-              <Subscribe />
-              <Add />
-            </div>
-            <div className="w-[35vw] h-full">
+          <div className="">
+            <div className="w-[35vw]">
               <ThumbnailList
                 className=""
                 thumbnail={movieData}
@@ -190,7 +194,6 @@ function HomePage() {
                 activeThumbnail={selectedMovie}
               />
             </div>
-            
           </div>
         </div>
       </div>
