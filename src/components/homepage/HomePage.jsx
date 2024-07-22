@@ -151,7 +151,7 @@ function HomePage() {
 
   return (
     <div className="">
-      <div className="pt-16 pl-10 relative w-[100vw] h-screen">
+      <div className="pt-16 pl-44 relative w-[100vw] h-screen">
         <video
           width="100%"
           height="100%"
