@@ -40,7 +40,7 @@ function HomePage() {
       add: true,
     },
     {
-      videoSrc: "https://path/to/video1.mp4",
+      videoSrc: "./../../../public/KhiladiGirls.mp4",
       thumbnail:
         "https://img10.hotstar.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/5846/1719590015846-h",
       title:
@@ -57,7 +57,7 @@ function HomePage() {
       add: true,
     },
     {
-      videoSrc: "https://path/to/video1.mp4",
+      videoSrc: "./../../../public/GovindaNaamMera.mp4",
       thumbnail:
         "https://img10.hotstar.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/2978/1432978-h-90572dd255c9",
       title:
@@ -74,7 +74,7 @@ function HomePage() {
       add: true,
     },
     {
-      videoSrc: "https://path/to/video1.mp4",
+      videoSrc: "./../../../public/South.mp4",
       thumbnail:
         "https://img10.hotstar.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/3124/1711159603124-h",
       title:
@@ -91,7 +91,7 @@ function HomePage() {
       add: true,
     },
     {
-      videoSrc: "https://path/to/video1.mp4",
+      videoSrc: "./../../../public/BahuBali2.mp4",
       thumbnail:
         "https://img10.hotstar.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/old_images/MOVIE/6137/1770016137/1770016137-h",
       title:
@@ -108,7 +108,7 @@ function HomePage() {
       add: true,
     },
     {
-      videoSrc: "https://path/to/video1.mp4",
+      videoSrc: "./../../../public/SriDevi.mp4",
       thumbnail:
         "https://img10.hotstar.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/5445/1719500995445-h",
       title:
@@ -125,7 +125,7 @@ function HomePage() {
       add: true,
     },
     {
-      videoSrc: "https://path/to/video1.mp4",
+      videoSrc: "./../../../public/MasterChef.mp4",
       thumbnail:
         "https://img10.hotstar.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/2039/1713892582039-h",
       title:
