@@ -8,7 +8,7 @@ import './../../App.css'
 function HomePage() {
   const movieData = [
     {
-      videoSrc: "https://path/to/video1.mp4",
+      videoSrc: "./../../../public/TazzaKhabar.mp4",
       thumbnail:
         "https://img10.hotstar.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/6796/1721328016796-h",
       title:
@@ -25,7 +25,7 @@ function HomePage() {
         "Lazy Nagendran has dreams of going to the Gulf and comes up with a plan to make money for the trip: marriage and dowry. But he does not stop at one...",
     },
     {
-      videoSrc: "https://path/to/video1.mp4",
+      videoSrc: "./../../../public/HeartBreak.mp4",
       thumbnail: "https://img10.hotstar.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/9992/1714373549992-h",
       title: "https://img10.hotstar.com/image/upload/f_auto,h_148/sources/r1/cms/prod/410/1711028050410-t",
       newRelease: true,
@@ -151,12 +151,12 @@ function HomePage() {
 
   return (
     <div>
-      <div className="pt-16 pl-10 relative w-[100vw] h-[100vh]">
-        <iframe
+      <div className="pt-16 pl-10 relative w-screen h-screen">
+        <video
           width="100%"
           height="100%"
-          className="-z-10 object-contain absolute top-[-6vh] left-[-9vw] content-stretch"
-          src="https://www.youtube.com/embed/Kmr5LgtTIF4?autoplay=1&mute=1&loop=1&playlist=Kmr5LgtTIF4&controls=0&showinfo=0&modestbranding=1&disablekb=1&fs=0&iv_load_policy=3"
+          className="-z-10 object-contain absolute top-0 left-[-9vw] m-0"
+          src={selectedMovie.videoSrc}
           frameBorder="0"
           allow="autoplay; encrypted-media"
           allowFullScreen
@@ -164,7 +164,7 @@ function HomePage() {
           autoPlay
           muted
           loop
-        ></iframe>
+        ></video>
 
         <div className="flex items-end gap-32">
           <div className="flex flex-col gap-4 min-h-[80%]">

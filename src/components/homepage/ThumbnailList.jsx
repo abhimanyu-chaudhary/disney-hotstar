@@ -15,9 +15,9 @@ function ThumbnailList({ thumbnail, onThumbnailClick, activeThumbnail }) {
   };
 
   return (
-    <div className="flex mx-auto h-full">
+    <div className="flex h-full">
       <button onClick={scrollLeft} className="p-5 mt-2 font-bold"> &lt; </button>
-      <div ref={scrollRef} className="flex  overflow-x-auto scrollbar-hide cursor-pointer pt-4 h-full" style={{width: "60vw"}}>
+      <div ref={scrollRef} className="flex w-30 overflow-x-auto scrollbar-hide cursor-pointer pt-4 h-full" style={{width: "60vw"}}>
         {thumbnail.map((thumbnail, index) => (
           <div
             key={index}
