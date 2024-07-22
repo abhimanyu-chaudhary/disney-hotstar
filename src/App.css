@@ -6,7 +6,8 @@ body{
     display: none;
   }
   
-  .scrollbar-hide {
+.scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
