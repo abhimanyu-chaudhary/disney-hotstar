@@ -63,7 +63,7 @@ function Routing() {
                 </div>
             </div>
         </div>
-        <div className="w-full mx-auto text-white">
+        <div className="text-white ml-[-7rem]">
             <Routes className="">
                 <Route path="/mypage" element={<MyPage />} />
                 <Route path="/explore" element={<Explore />} />

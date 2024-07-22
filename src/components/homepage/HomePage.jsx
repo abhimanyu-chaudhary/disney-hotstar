@@ -150,12 +150,12 @@ function HomePage() {
   };
 
   return (
-    <div>
-      <div className="pt-16 pl-10 relative w-screen h-screen">
+    <div className="">
+      <div className="pt-16 pl-10 relative w-[100vw] h-screen">
         <video
           width="100%"
           height="100%"
-          className="-z-10 object-contain absolute top-0 left-[-9vw] m-0"
+          className="-z-10 object-cover absolute top-0 left-0"
           src={selectedMovie.videoSrc}
           frameBorder="0"
           allow="autoplay; encrypted-media"
