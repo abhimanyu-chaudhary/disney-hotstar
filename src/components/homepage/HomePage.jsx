@@ -153,14 +153,14 @@ function HomePage() {
     <div className="">
       <div className="pt-16 pl-44 relative w-[100vw] h-screen flex items-start">
         <video
-          style={{height: "1080px"}}
+          style={{height: ""}}
           width="100%"
           height="100%"
           className="-z-10 object-cover absolute top-[-5rem] left-0"
           src={selectedMovie.videoSrc}
           frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowFullScre0........................................................................................................................................................................................en
+          allowFullScreen
           title="Background Video"
           autoPlay
           muted
