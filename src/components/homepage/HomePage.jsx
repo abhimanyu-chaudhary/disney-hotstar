@@ -156,11 +156,11 @@ function HomePage() {
           style={{height: "1080px"}}
           width="100%"
           height="100%"
-          className="-z-10 object-cover absolute top-[-5rem] left-0 flex items-top"
+          className="-z-10 object-cover absolute top-[-5rem] left-0"
           src={selectedMovie.videoSrc}
           frameBorder="0"
           allow="autoplay; encrypted-media"
-          allowFullScreen
+          allowFullScre0........................................................................................................................................................................................en
           title="Background Video"
           autoPlay
           muted
