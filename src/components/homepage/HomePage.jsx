@@ -3,6 +3,7 @@ import Subscribe from "../Subscribe";
 import Add from "../smallcomponents/Add";
 import ThumbnailList from "./ThumbnailList";
 import './../../App.css'
+import { GoUnmute } from "react-icons/go";
 
 
 function HomePage() {
@@ -149,6 +150,11 @@ function HomePage() {
     setSelectedMovie(thumbnail);
   };
 
+  const [muted, setMuted] = useState(true);
+  const muteHandler = () => {
+    setMuted(false);
+  }
+
   return (
     <div className="">
       <div className="pt-16 pl-44 relative w-[100vw] h-screen flex items-start">
@@ -163,7 +169,7 @@ function HomePage() {
           allowFullScreen
           title="Background Video"
           autoPlay
-          muted
+          muted={muted}
           loop
         ></video>
 
@@ -189,7 +195,8 @@ function HomePage() {
               </div>
           </div>
           <div className="">
-            <div className="w-[35vw]">
+            <div className="w-[35vw] flex flex-col">
+              <span className="ml-[28rem] mb-10 text-lg cursor-pointer" onClick={muteHandler}><GoUnmute /></span>
               <ThumbnailList
                 className=""
                 thumbnail={movieData}
