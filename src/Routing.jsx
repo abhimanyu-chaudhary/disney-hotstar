@@ -51,7 +51,7 @@ function Routing() {
                         const isActive = location.pathname === elem.link;
                         return (
                         <Link className="block" to={elem.link} key={index}>
-                            <div className={`flex items-center gap-2 mt-9 text-zinc-400 hover:text-white hover:text-[22px] ${isActive && "text-zinc-100"}`}>
+                            <div className={`flex items-center gap-2 mt-9 text-zinc-400 hover:text-white hover:text-[22px] ${isActive && "text-zinc-200"}`}>
                                 <span className="text-[18px]">{elem.icon}</span>
                                 <h1 className="absolute left-[70px] w-40 opacity-0 group-hover:opacity-100 font-semibold text-[18px] transition ease-in duration-300">
                                     {elem.name}
