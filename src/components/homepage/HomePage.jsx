@@ -4,6 +4,7 @@ import Add from "../smallcomponents/Add";
 import ThumbnailList from "./ThumbnailList";
 import './../../App.css'
 import { GoUnmute } from "react-icons/go";
+import { GoMute } from "react-icons/go";
 
 
 function HomePage() {
@@ -152,7 +153,7 @@ function HomePage() {
 
   const [muted, setMuted] = useState(true);
   const muteHandler = () => {
-    setMuted(false);
+    setMuted(!muted);
   }
 
   return (
@@ -196,7 +197,7 @@ function HomePage() {
           </div>
           <div className="">
             <div className="w-[35vw] flex flex-col">
-              <span className="ml-[28rem] mb-10 text-lg cursor-pointer" onClick={muteHandler}><GoUnmute /></span>
+              <span className="ml-[28rem] mb-10 text-lg cursor-pointer" onClick={muteHandler}>{muted ? <GoMute /> : <GoUnmute /> }</span>
               <ThumbnailList
                 className=""
                 thumbnail={movieData}
