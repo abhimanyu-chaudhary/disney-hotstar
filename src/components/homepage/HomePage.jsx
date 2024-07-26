@@ -209,7 +209,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="h-40">
         <TrendingMovie />
       </div>
     </div>
