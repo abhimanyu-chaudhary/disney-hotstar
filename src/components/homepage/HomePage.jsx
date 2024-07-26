@@ -5,6 +5,7 @@ import ThumbnailList from "./ThumbnailList";
 import './../../App.css'
 import { GoUnmute } from "react-icons/go";
 import { GoMute } from "react-icons/go";
+import TrendingMovie from "./TrendingMovie";
 
 
 function HomePage() {
@@ -208,7 +209,9 @@ function HomePage() {
           </div>
         </div>
       </div>
-      
+      <div>
+        <TrendingMovie />
+      </div>
     </div>
   );
 }
