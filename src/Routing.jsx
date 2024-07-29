@@ -32,9 +32,8 @@ function Routing() {
   const location = useLocation();
   return (
     <div className="flex">
-        {/* bg-gradient-to-l from-zinc-50 to-transparent */}
-        <div className="bg-gradient-to-l from-transparent to-slate-900 absolute w-[100vw] h-[100vh] "></div>
-        <div className=" w-[15vw] z-10">
+        <div className="hover:bg-gradient-to-l hover:from-transparent hover:to-slate-900 absolute w-[100vw] h-[100vh] -z-[1] "></div>
+        <div className="w-[15vw] fixed h-screen">
             <div className="w-28 h-screen pt-8 pl-0 flex flex-col items-center bg-transparent">
                 <img
                     className="w-14"

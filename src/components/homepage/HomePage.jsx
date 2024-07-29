@@ -158,8 +158,8 @@ function HomePage() {
   }
 
   return (
-    <div className="">
-      <div className="pt-16 pl-44 relative w-[100vw] h-screen flex items-start">
+    <div className="pl-[12rem] bg-gradient-to-l from-transparent to-slate-900">
+      <div className="pt-16  h-screen flex items-start">
         <video
           style={{height: ""}}
           width="100%"
@@ -175,7 +175,7 @@ function HomePage() {
           loop
         ></video>
 
-        <div className="flex items-end gap-32">
+        <div className="flex items-end mx-auto gap-32">
           <div className="flex flex-col gap-4 min-h-[80%]">
               <div className="h-32">
                 <img className="w-48" src={selectedMovie.title} alt="movie-logo" />
@@ -209,7 +209,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="pl-44 overflow-scroll">
+      <div className="mt-[-5rem] ml-[6rem] bg-slate-950 overflow-scroll flex items-center h-full pb-20">
         <TrendingMovie />
       </div>
     </div>
