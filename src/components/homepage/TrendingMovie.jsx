@@ -19,7 +19,7 @@ function TrendingMovie() {
   return (
     <div className='flex'>
       {movie.map((movie, index) => (
-        <img className='w-40' src={url + movie.poster_path} alt="movie-poster" />
+        <img className='w-40 hover:scale-150 z-10' src={url + movie.poster_path} alt="movie-poster" />
         
       ))}
     </div>

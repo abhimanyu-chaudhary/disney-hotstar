@@ -209,7 +209,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-md mx-auto ">
+      <div className="pl-44 overflow-scroll">
         <TrendingMovie />
       </div>
     </div>
