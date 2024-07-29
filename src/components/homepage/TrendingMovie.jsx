@@ -17,7 +17,7 @@ function TrendingMovie() {
     }
 
   return (
-    <div className='flex z-[100] gap-3'>
+    <div className='flex z-[100] gap-2'>
       {movie.map((movie, index) => (
         <img className='w-40 rounded-md' src={url + movie.poster_path} alt="movie-poster" />
         

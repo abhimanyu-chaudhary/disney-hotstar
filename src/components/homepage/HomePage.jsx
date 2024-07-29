@@ -209,7 +209,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="mt-[-5rem] ml-[6rem] bg-slate-950 overflow-scroll flex items-center h-full pb-20">
+      <div className="mt-[-5rem] ml-[6rem] bg-slate-950 overflow-scroll flex items-center h-full pb-20 ">
         <TrendingMovie />
       </div>
     </div>
