@@ -19,7 +19,7 @@ function TrendingMovie() {
   return (
     <div className='flex'>
       {movie.map((movie, index) => (
-        <img className='w-full h-full' src="https://image.tmdb.org/t/p/original/nP6RliHjxsz4irTKsxe8FRhKZYl.jpg" alt="movie-poster" />
+        <img className='w-40' src={url + movie.poster_path} alt="movie-poster" />
         
       ))}
     </div>

@@ -209,7 +209,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="h-40">
+      <div className="max-w-screen-md mx-auto ">
         <TrendingMovie />
       </div>
     </div>
